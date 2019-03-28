@@ -11,7 +11,7 @@
   <meta name="author" content="Will J. Robertson">
   <meta name="description" content="Front Page for DMW Halo">
   <meta name="keywords" content="Front page, receipts">
-  <link rel="stylesheet" href="stylesheet.css" type="text/css">
+  <link rel="stylesheet" href="css/stylesheet.css" >
   </head>
   <body>
   <script>
@@ -20,7 +20,7 @@
   	<!-- Latest compiled and minified CSS -->
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
 
-<link rel="stylesheet" href="stylesheet.css" type="text/css"> 
+<link rel="stylesheet" href="css/stylesheet.css"> 
 </head>
 <body>
 <script>
@@ -30,7 +30,7 @@
 
 <!-- NAVBAR BEGINS -->
 
-   <nav class="navbar navbar-expand-lg navbar-light fixed top" style="background-color: #D3E3FC; color: #00887A; ">
+   <nav class="navbar navbar-expand-lg navbar-light fixed top">
  <div class="navbar-header">
      <img src="img/receiptLogo.png" alt="logo" width="50" height="50">
    </a>
@@ -63,13 +63,49 @@
 </nav>
 <!-- NAVBAR ENDS -->
 
+<!-- Beginning of greeting -->
+<div class="greeting">
+<script>
+
+var d = new Date();
+var time = d.getHours();
+
+if (time<12) {
+  document.write("<h1>Good Morning, sign up to join!</h1>");
+}
+else if (time>12 && time<18)
+
+document.write("<h1>Good Afternoon, sign up to join!!</h1>");
 
 
+else {
+  document.write("<h1>Good Evening, sign up to join!</h1>");
+}
 
+</script>
+</div>
+
+<!-- Ending of greeting -->
+
+<!-- Sign in Box begins -->
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-md-6 col-md-offset-3 box1">
+      <div class="col-md-6 col-md-offset-3">
+        <input class="input-box" type="text" id="username" placeholder="Username"><br />
+        <input class="input-box" type="password" id="password"placeholder="Password"><br />
+  <!-- <input type="button" value="Sign Up" onClick="clicked()" id="signUpButton"> -->
+       <a href="js/signup.html"><button class="form-button">Sign Up</button></a>
+        <input type="button" value="Login" onClick="clicked1()">
+    </div>
+  </div>
+  </div>
+</div>
+<!-- End of Sign in Box -->
 
 <!-- FOOTER BEGINS-->
 
-<footer class="bg-light footer navbar-fixed-bottom navbar-expand-lg" style="background-color: #D3E3FC; color: #00887A;>
+<footer class="bg-light footer navbar-fixed-bottom navbar-expand-lg">
 <div class="container">
  <p class="m-0 text-center text-white">Copyright &copy; DMW-HALO</p>
  
@@ -93,6 +129,10 @@
 
 
 <!-- FOOTER ENDS -->
+ <script type="text/javascript" src="index.js"></script>
+ 
+
+</script>
 </body>
 
 

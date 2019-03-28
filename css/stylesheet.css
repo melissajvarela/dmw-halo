@@ -1,0 +1,49 @@
+.container-fluid {
+    padding: 0;	  padding: 0;
+    margin: 0;	  margin: 0;
+}
+
+.navbar, .footer {
+    background-color:#D3E3FC;
+}
+
+body{
+    /* background-image: url('../img/r7.png'); */
+    background-repeat: no-repeat;
+
+    
+}
+
+.box1{
+    background-color: rgb(247, 247, 247);
+    box-shadow: 5px 5px 10px grey;
+    padding-top:10px;
+    padding-bottom: 10px;
+    margin-top: 15px;
+}
+
+.form-button {
+    margin-top: 15px;
+}
+
+.input-box{
+    width: 100%;
+    /* background-color:rgb(247,247,247); */
+    color: white;
+}
+
+.greeting{
+    color:#00887A;
+    text-align:center;
+    
+}
+
+
+.box {
+    border-color:#00887A;
+    border-width:30px;
+}
+
+.footer{
+    height:40px;
+}
